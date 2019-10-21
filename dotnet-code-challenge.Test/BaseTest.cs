@@ -11,7 +11,7 @@ namespace dotnet_code_challenge.Test
         protected readonly string xmlPath = @"..\..\..\FeedData\Caulfield_Race1.xml";
         protected readonly string jsonPath = @"..\..\..\FeedData\Wolferhampton_Race1.json";
         protected readonly string wrongPath = @"..\..\..\FeedData\SomeFile.dat";
-        protected readonly string badFile = @"..\..\..\FeedData\BadFile.txt";
+        protected readonly string badFile = @"..\..\..\FeedData\BadFile.dat";
         protected WolferHamptonHorseModel wolferWithEmptydata;
         protected CaufieldHorseModel caulfieldModelWithEmptyData;
 
