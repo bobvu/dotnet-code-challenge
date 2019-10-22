@@ -1,31 +1,20 @@
-# .NET Code Challenge
+# About
 
-You've been provided with the shell of a .Net application in Visual Studio with some sample inputs 
+This program will fetch data from xml and json files and output a list of horses with name and price in ascending order
 
-Create an application which outputs the horse names in price ascending order. 
+## Thoughts
 
-The code should be at a standard you'd feel comfortable with putting in production.
+When it comes, I believe it is more than just a simple file parser in front of me. My plan is to provide a end-to-end solution with covering most of the best BackEnd Practices. Let's start.
 
-## Background
+First of all, as doing Unit tests is a critical part of the software developement proccess, I want to design classes in a way that: 
+-  Easy to test. The tests must cover all sorts of aspects from opening files, process files, parsing files to rasing expected exceptions.
+- Strictly follow SOLID design principles
+- Handle or raise proper exceptions where appropriate.
 
-The source data reflects how BetEasy has different providers of data which feed our website.
-
-The data files are used allows creation of different races:
-* Caulfield_Race1.xml https://beteasy.com.au/racing-betting/horse-racing/caulfield/20171216/race-1-798068-25502504  
-* Wolferhampton_Race1.json https://beteasy.com.au/racing-betting/horse-racing/wolverhampton/20171213/race-1-797507-25500650
+Second, deploy using docker. No matter how awesome a product is, it can’t survive if it fails to provide a always-online service and catch up the business capacity expansion. Containerised application is definitely an option especially when it is working with tools like Kubernetes, stability and scalability can both be achieved and controlled with a very low risk.
 
 ## Guidelines
 
-You can either complete the test prior to the interview or come in and do it as part of the technical interview. The application shell provided is a suggestion only, if C#/.Net isn't your preferred language/Framework please use what you're most comfortable with.
-
-### At Home
-* Please limit your time to 2 hours. If you don't complete it within this time just let us know what is outstanding.
-* Commit your code at regular intervals so we can see how you reached your solution
-* Once completed push to a public repo and share the link with us
-* Please replace this ReadMe with any setup required
-
-### At BetEasy
-* The goal of this challenge is not to complete the exercise, but to give us an understanding on how you tackle problems. Please talk us through your thinking process & assumptions as you go.
-* Feel free to use any resources you would normally use (Google, StackOverflow etc.)
-* Please ask any questions you wish
-* The coding exercise will be done on the developer test laptop (1141): Test // Wagering99
+- clone the repository into a folder
+- using VS 2017 to open the solution, after that you can run or test from there
+- Or you can build docker image and run on the program on the local machine using: docker build, and docker run -it --rm yourImage
